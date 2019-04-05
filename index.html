@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/app.css" type="text/css">
+</head>
+<body>
+
+
+
+	<div id="mainnnnnnn">
+      <center>
+			<h2 id="h1">Meet Up</h2>
+	<input type="button" value="Log in" id="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></center>
+<!-- ******************************************* Log in **************************************************************** -->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email Address" id="EmailId1" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="PasswordID1" name="psw" required>
+        
+      <input type="button" value="Log in" id="btn" onclick="Login()">
+    
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" id="btn" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- ****************************** Log in ********************************************************** -->
+
+<center>
+<input type="button" value="Sign Up" id="btn" onclick="document.getElementById('id012').style.display='block'" style="width:auto;">
+</center>
+<!-- *************************************************** Sign Up ********************************************************** -->
+<div id="id012" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer" id="signupbox">
+      <span onclick="document.getElementById('id012').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    </div>
+
+    <div class="container" >
+			<label for="ufirstname"><b>First Name</b></label>
+			<input type="text" placeholder="Enter First Name" id="firstName" name="Fname" required>
+
+			<label for="ulastname"><b>Last Name</b></label>
+			<input type="text" placeholder="Enter Last Name" name="lname" id="lastName" required>
+
+      <label for="ucontact"><b>Contact</b></label>
+      <input type="text" placeholder="Enter Contact Number "  name="contact" id="contact" required>
+
+      <label for="uage"><b>Age</b></label>
+      <input type="text" placeholder="Enter Your Age"  name="age" id="age" required>
+
+      <label for="uemail"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email Address" id="EmailId">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="PasswordID" name="psw" required>
+
+  
+      <input type="button" value="Sign up" id="btn" onclick="signup()">
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" id="btn" onclick="document.getElementById('id012').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+    <!-- **************************** Sign Up ***************************************************** -->
+  </form>
+</div>
+</div>
+
+
+<div id="myName"> 
+  <p>@ 2019 Hishmat Rai</p>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  
+  
+  // sign up
+  var modal = document.getElementById('id012');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+</html>

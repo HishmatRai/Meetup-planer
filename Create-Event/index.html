@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <!--===============================================================================================-->
+		  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+		  <!--===============================================================================================-->
+			  <link rel="stylesheet" type="text/css" href="css/util.css">
+			  <link rel="stylesheet" type="text/css" href="css/main.css">
+			<!--===============================================================================================-->
+			<link rel="stylesheet" href="css/createEvent.css" type="text/css">
+		
+
+
+</head>
+<body>
+ 
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="changeNbaColor">
+<!-- ****************************** navigation Bar ************************************************* -->
+    <ul class="nav navbar-nav">
+ 
+       <li onclick="homepage()()"><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Home</a></li>
+       <li onclick="myEvent()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> My Events</a></li>
+ 
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+    
+      <li onclick="logout()"><a href="#"><span class="glyphicon glyphicon-user"></span> Log out</a></li>
+      <li ><a href="#"><span class="glyphicon glyphicon-user" id="getNameFromUser"></span></a></li>
+  
+    </ul>
+  </div>
+</nav>
+<div id="wellComePage">
+		<h1>Create Event</h1>
+		</div>
+<!-- ********************* Create Event **************************** -->
+<div class="container-contact100">
+
+
+		<form class="contact100-form validate-form" id="reseatData"> 
+
+			<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+				<span class="label-input100">Your Name</span>
+				<input class="input100" type="text" name="name" id="name" placeholder="Enter your name">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Event Name is required">
+				<span class="label-input100">Event Name</span>
+				<input class="input100" type="text" name="eventname" id="eventName" placeholder="Enter event your name">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Event time is required">
+				<span class="label-input100">Event Time</span>
+				<input class="input100" type="time" name="eventime" id="eventTime">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="event date is required">
+				<span class="label-input100"> Event Date</span>
+				<input class="input100" type="date" name="eventdate" id="eventDate">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Evetn price is required">
+				<span class="label-input100">Event Price</span>
+				<input class="input100" type="text" name="eventprice" id="eventPrice" placeholder="Enter event price">
+				<span class="focus-input100"></span>
+			</div>
+
+
+			<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<span class="label-input100">Email</span>
+				<input class="input100" type="text" name="email" id="emailAddress" placeholder="Enter your email addess">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input">
+				<span >Image</span>
+				<input type="file" name="fileToUpload" id="fileToUpload">
+				
+			</div><br>
+
+			<div class="wrap-input100 validate-input" data-validate = "Description is required">
+				<span class="label-input100">Description</span>
+				<textarea class="input100" name="message" id="description" placeholder="Your description here..."></textarea>
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="container-contact100-form-btn">
+				<input type="button" class="contact100-form-btn" value="submit" id="submitbtn" onclick="submit1()">
+			</div>
+		</form>
+
+	
+	</div>
+</div>
+<!-- ******************* Show Data **************************************** -->
+<div id="getDateAndSave">
+
+	
+</div>
+<div id="myName">
+	<p>@ 2019 Hishmat Rai</p>
+</div>
+</body>
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- ========================================================================================= -->
+	<!-- use javascript For create event-->
+	<script src="js/create.js"></script>
+	<!-- home page navigation bar -->
+<script src="js/homepage.js"></script>
+</html>

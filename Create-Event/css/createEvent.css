@@ -1,0 +1,69 @@
+.mainDiv{
+    border: 4px solid black;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+#submitbtn{
+    background-color: rgb(44, 108, 128);
+   border: none;
+   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+          width: 250px;
+          text-align: center;
+          margin-bottom: 5px;
+          margin-right: 4px;
+          }
+          #deletebtn:hover{
+              background-color: rgb(43, 76, 87);
+          }
+#myName{
+    text-align: center;
+    font-family: cursive;
+}
+.imageSave{
+    text-align: center;;
+    margin-bottom: 3px;
+}
+.allLiTag{
+    border-bottom: 1px dotted black;
+    margin-bottom: 2px;
+}
+img{
+    border-radius: 100px;
+    text-align: center;
+}
+.deletebtn{
+background-color: rgb(44, 108, 128);
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+width: 250px;
+text-align: center;
+margin-bottom: 5px;
+margin-right: 4px;
+}
+.deletebtn:hover{
+    background-color: rgb(43, 76, 87);
+}
+
+#wellComePage{
+background-color: rgb(44, 108, 128);
+color: white;
+font-weight: bold;
+text-align: center;
+font-family: cursive
+}
+#changeNbaColor{
+background-color: rgb(44, 108, 128);
+
+}

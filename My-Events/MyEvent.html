@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="myevent.css" type="text/css">  
+    <title>My Event</title>
+</head>
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid" id="changeNbaColor">
+              <!-- ***********************  Navigation Bar ********************** -->
+                  <ul class="nav navbar-nav">
+                        <li onclick="homePage()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Home</a></li>
+                     <li  onclick="cEvent()"><a href="#"><span class="glyphicon glyphicon-log-in" ></span> Create Event</a></li>
+                     
+              
+                  </ul>
+              
+                  <ul class="nav navbar-nav navbar-right">
+                  
+                    <li onclick="logout()"><a href="#"><span class="glyphicon glyphicon-user"></span> Log out</a></li>
+                    <li ><a href="#"><span class="glyphicon glyphicon-user" id="getNameFromUser"></span></a></li>
+                
+                  </ul>
+                </div>
+              </nav>
+              <div id="wellComePage">
+                    <h1>My Events</h1>
+                    </div>
+                    <!-- ****************** Show data ******************************* -->
+                    <div id="getDateAndSave"></div>
+                    <div id="myName">
+                      <p>@ 2019 Hishmat Rai</p>
+                    </div>
+</body>
+<!-- Navigation Bar Javascript -->
+<Script src="navbar.js"></Script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="second.css" type="text/css">
+</head>
+<body>
+<!-- ********************************** Navigation Bar  ***********************************************-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="changeNbaColor">
+
+    <ul class="nav navbar-nav">
+ 
+       <li  onclick="cEvent()"><a href="#"><span class="glyphicon glyphicon-log-in" ></span> Create Event</a></li>
+       <li onclick="myEvent()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> My Events</a></li>
+
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+    
+      <li onclick="logout()"><a href="#"><span class="glyphicon glyphicon-user"></span> Log out</a></li>
+      <li ><a href="#"><span class="glyphicon glyphicon-user" id="getNameFromUser"></span></a></li>
+  
+    </ul>
+  </div>
+</nav>
+  <div id="wellComePage">
+<h1>Wel Come To Home Page</h1>
+</div>
+<!-- ***********************************Events Data Show *********************************** -->
+<div id="getDateAndSave"></div>
+
+<div id="myName">
+  <p>@ 2019 Hishmat Rai</p>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
